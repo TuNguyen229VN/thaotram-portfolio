@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles/Contact.module.css"; // Assuming you have a CSS module for styles
 import Mail from "../../../public/assets/icons/Mail";
 import Phone from "../../../public/assets/icons/Phone";
-import ArrowUpRight from "../../../public/assets/icons/ArrowUpRight";
+import ArrowUpRight from "../../components/icons/ArrowUpRight";
 const Contact = () => {
   return (
     <div className={styles.contact} id="contact">

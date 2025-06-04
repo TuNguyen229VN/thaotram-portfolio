@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles/ProjectItem.module.css"; // Assuming you have a CSS module for styles
-import Arrow from "../../../public/assets/icons/arrow";
+import Arrow from "../icons/Arrow";
 import { Link } from "react-router";
 import { PROJECT_DETAIL_ROUTE } from "../../constants/routesApp";
 const ProjectItem = ({ index = 0, project = {} }) => {

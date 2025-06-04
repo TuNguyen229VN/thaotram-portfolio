@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles/Button.module.css"; // Assuming
 import { Link } from "react-router";
 import { HOME_ROUTE } from "../../constants/routesApp";
-import ArrowToLeft from "../../../public/assets/icons/ArrowToLeft";
+import ArrowToLeft from "../icons/ArrowToLeft";
 
 const ButtonBack = ({ content = "back" }) => {
   return (
