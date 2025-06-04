@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "IBMPlexMono_Bold";
+  src: local("IBMPlexMono_Bold"), local("IBMPlexMono_Bold"),
+    url("../fonts/IBMPlexMono-Bold.woff") format("woff2"),
+    url("../fonts/IBMPlexMono-Bold.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "IBMPlexMono_Regular";
+  src: local("IBMPlexMono_Regular"), local("IBMPlexMono_Regular"),
+    url("../fonts/IBMPlexMono-Regular.woff") format("woff2"),
+    url("../fonts/BMPlexMono-Regular.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter24pt_Bold";
+  src: local("Inter24pt_Bold"), local("Inter24pt_Bold"),
+    url("../fonts/Inter24pt-Bold.woff") format("woff2"),
+    url("../fonts/Inter24pt-Bold.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter24pt_Regular";
+  src: local("Inter24pt_Regular"), local("Inter24pt_Regular"),
+    url("../fonts/Inter24pt-Regular.woff") format("woff2"),
+    url("../fonts/Inter24pt-Regular.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins_Bold";
+  src: local("Poppins_Bold"), local("Poppins_Bold"),
+    url("../fonts/Poppins-Bold.woff") format("woff2"),
+    url("../fonts/Poppins-Bold.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins-Regular";
+  src: local("Poppins-Regular"), local("Poppins-Regular"),
+    url("../fonts/Poppins-Regular.woff") format("woff2"),
+    url("../fonts/Poppins-Regular.woff2") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}

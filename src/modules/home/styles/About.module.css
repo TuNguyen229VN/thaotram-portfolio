@@ -1,0 +1,71 @@
+@import url("../../../styles/font.css");
+.about {
+  padding: 80px 80px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  background-color: RGB(235, 235, 235);
+  height: 100vh;
+}
+
+.about__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  height: max-content;
+}
+.content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content__big {
+  font-family: "Poppins_Bold";
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: rgb(25, 22, 23);
+}
+
+.content__desc {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__desc p {
+  font-family: "IBMPlexMono_Regular";
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgb(25, 22, 23);
+  line-height: 12px;
+  width: 70%;
+}
+.content__small {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(25, 22, 23);
+  line-height: 24px;
+}
+
+.content__image {
+  position: relative;
+  width: 500px;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.content__image img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+

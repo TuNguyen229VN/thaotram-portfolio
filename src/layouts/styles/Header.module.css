@@ -1,0 +1,35 @@
+@import url("../../styles/font.css");
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+  width: 100%;
+  mix-blend-mode: difference;
+}
+.header__logo {
+  font-family: "Inter24pt_Bold", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(236, 236, 236);
+  border-bottom: 1px solid rgb(122, 122, 122);
+  padding-bottom: 10px;
+  width: 50%;
+}
+
+.header__nav {
+  display: flex;
+  font-size: 14px;
+  justify-content: flex-end;
+  gap: 40px;
+  border-top: 1px solid rgb(122, 122, 122);
+  padding-top: 10px;
+  width: 50%;
+}
+
+
+

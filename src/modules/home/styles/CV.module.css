@@ -1,0 +1,62 @@
+@import url("../../../styles/font.css");
+.cv {
+  padding: 80px 80px;
+  border-radius: 60px;
+  background-color: RGB(235, 235, 235);
+  color: rgb(25, 22, 23);
+}
+
+.cv__title {
+  font-size: 96px;
+  line-height: 108px;
+  font-weight: 600;
+}
+
+.cv__block {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.cv__details {
+  flex: 1;
+}
+.cv__exp {
+  width: 470px;
+  border-top: 1px solid rgb(122, 122, 122);
+}
+.cv__exp span {
+  font-family: "IBMPlexMono_Regular";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgb(122, 122, 122);
+}
+
+.cv__exp p {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+}
+
+.cv__detailsWrap {
+  border-top: 1px solid rgb(122, 122, 122);
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cv__companyName {
+  font-size: 36px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.cv__companyPosition,
+.cv__date {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}

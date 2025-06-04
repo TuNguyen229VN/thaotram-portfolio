@@ -1,0 +1,116 @@
+@import url("../../../styles/font.css");
+.bio {
+  padding: 200px 0px 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 0px;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.bio__top {
+  align-items: flex-start;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: min-content;
+  justify-content: space-between;
+  overflow: visible;
+  padding: 0 0 12px;
+  position: relative;
+  width: 100%;
+}
+
+.bio__topname {
+  font-size: 96px;
+  font-weight: 600;
+  width: 990px;
+  line-height: 108px;
+  letter-spacing: -5.76px;
+}
+
+.bio__topname span {
+  color: rgb(122, 122, 122);
+  font-weight: 600;
+}
+
+.bio__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(54, 54, 54);
+  opacity: 1;
+  margin-top: 8px;
+}
+.bio__bottom__left {
+  width: 60%;
+  padding: 20px 0;
+  padding-right: 40px;
+  border-right: 1px solid rgb(54, 54, 54);
+  opacity: 1;
+}
+
+.bio__text {
+  font-family: "IBMPlexMono_Regular", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgb(122, 122, 122);
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.bio__description {
+  color: rgb(236, 236, 236);
+}
+
+.scroll__wrapper {
+  border-top: 1px solid rgb(54, 54, 54);
+}
+
+.tag {
+  padding: 30px 50px;
+  color: rgb(235, 235, 235);
+  border-right: 1px solid #2a292b;
+  font-weight: 400;
+  font-family: "Inter24pt-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.scroll__track {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Tạo overlay mờ bên trái và phải */
+.scroll__track::before,
+.scroll__track::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.scroll__track::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(25, 22, 23, 1)
+    rgba(235, 235, 235, 0),
+  );
+}
+
+.scroll__track::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(25, 22, 23, 1)
+    rgba(235, 235, 235, 0),
+  );
+}

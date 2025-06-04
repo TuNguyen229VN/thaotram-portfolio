@@ -1,0 +1,47 @@
+@import url("../../../styles/font.css");
+.skill {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.skill__title{
+    width: 60%;
+}
+.skill__list{
+    width: 40%;
+}
+.skill__title span {
+  font-family: "IBMPlexMono_Regular", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: rgb(122, 122, 122);
+  text-transform: uppercase;
+}
+
+.skill__titleText {
+  margin-top: 20px;
+  font-size: 72px;
+  line-height: 80px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.skill__titleText::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: rgb(122, 122, 122);
+  margin-top: 10px;
+}
+
+.skill__titleDesc {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}

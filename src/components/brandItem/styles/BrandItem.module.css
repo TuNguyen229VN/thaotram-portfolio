@@ -1,0 +1,18 @@
+.brandItem {
+  border-left: 1px solid rgb(122, 122, 122);
+  padding: 50px 80px;
+  border-top: 1px solid rgb(122, 122, 122);
+  border-bottom: 1px solid rgb(122, 122, 122);
+  width: 330px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandItem img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(60%);
+}

@@ -1,0 +1,90 @@
+@import url("../../../styles/font.css");
+.button__contact {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 155px;
+  border-radius: 20px;
+  background-color: rgb(235, 235, 235);
+  color: rgb(26, 23, 26);
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.button__contact p {
+  font-family: "Inter24pt_Bold", sans-serif;
+}
+.button__contact__icon {
+  position: absolute;
+  right: 5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgb(26, 23, 26);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button__contact__icon svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  fill: rgb(235, 235, 235);
+}
+.button__contact:hover {
+  background-color: rgb(26, 23, 26);
+  color: rgb(235, 235, 235);
+  border: 1px solid rgb(235, 235, 235);
+  transition: all 0.5s ease-in-out;
+}
+.button__contact:hover .button__contact__icon {
+  display: initial;
+  width: 100%;
+  border-radius: initial;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.button__contact:hover .button__contact__icon svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.buttonBack {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: max-content;
+}
+.buttonBack:hover .buttonBack__icon {
+  border: 1px solid rgb(235, 235, 235);
+  transition: 0.5s ease-in-out;
+}
+.buttonBack__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgb(122, 122, 122);
+  transition: 0.5s ease-in-out;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.buttonBack p {
+  font-family: "Inter24pt_Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+}

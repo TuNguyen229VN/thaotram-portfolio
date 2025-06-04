@@ -1,0 +1,46 @@
+@import url("./reset.css");
+@import url("./font.css");
+
+* {
+  font-family: "Poppins-Regular", sans-serif;
+  font-weight: normal;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 0;
+  outline: none;
+}
+
+body {
+  background-color: RGB(26, 23, 26);
+  color: rgb(236, 236, 236);
+  position: relative;
+  max-width: 1920px;
+  margin: auto;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  line-height: 24px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(236, 236, 236);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(122, 122, 122);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

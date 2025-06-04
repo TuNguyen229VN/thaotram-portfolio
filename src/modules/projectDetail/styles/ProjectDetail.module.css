@@ -1,0 +1,114 @@
+@import url("../../../styles/font.css");
+.projectDetail {
+  padding: 80px 80px;
+}
+
+.pdType {
+  margin-top: 40px;
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: rgb(122, 122, 122);
+}
+
+.pdTypeItem {
+  font-family: "IBMPlexMono_Regular", sans-serif;
+  border-radius: 20px;
+  border: 1px solid rgb(122, 122, 122);
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.pdTitle {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 80px;
+  margin: 30px 0;
+}
+
+.pdBanner {
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pdBanner img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pdContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pdContentWrap {
+  width: 300px;
+}
+
+.pdInfo {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pdInfo p {
+  font-family: "Inter_Regular", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.pdInfo span {
+  font-family: "IBMPlexMono_Regular", sans-serif;
+  color: rgb(122, 122, 122);
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+}
+.pdDesc {
+  flex: 1;
+}
+.pdDesc p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.pdBlock {
+  height: 50px;
+}
+.pdListImage {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pdAnother {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 50px 0px;
+}
+
+.projectList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  width: 100%;
+}
