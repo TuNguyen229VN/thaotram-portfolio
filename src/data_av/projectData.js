@@ -23,7 +23,7 @@ const projectData = [
   },
   {
     id: 3,
-    title: "Another Project",
+    title: "Another Project 2",
     company: "ABC Corp",
     date: "July 20, 2025",
     description: ["Development", "Testing"],

@@ -6,8 +6,10 @@ import DashComponent from "../../components/dash/DashComponent";
 const CV = () => {
   return (
     <div className={styles.cv}>
-      <p className={styles.cv__title}>Curriculum Vitae</p>
-      <div className={styles.cv__block}>
+      <p className={styles.cv__title} data-aos="fade-up">
+        Curriculum Vitae
+      </p>
+      <div className={styles.cv__block} data-aos="fade-up" data-delay="300">
         <div className={styles.cv__exp}>
           <span>01</span>
           <p>Education</p>
@@ -27,7 +29,7 @@ const CV = () => {
             ))}
         </div>
       </div>
-      <div className={styles.cv__block}>
+      <div className={styles.cv__block} data-aos="fade-up" data-delay="400">
         <div className={styles.cv__exp}>
           <span>02</span>
           <p>Experience</p>

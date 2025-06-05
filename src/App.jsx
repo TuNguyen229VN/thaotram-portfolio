@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
 import { HOME_ROUTE, PROJECT_DETAIL_ROUTE } from "./constants/routesApp";
-import ContainerFluid from "./layouts/ContainerFluid";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 const HomePage = React.lazy(() => import("./pages/HomePage"));
 function App() {

@@ -7,8 +7,8 @@ const Brand = () => {
   return (
     <div className={styles.brand}>
       <div className={styles.brand__title}>
-        <h1 className={styles.brand__name}>Brands who trust me</h1>
-        <p className={styles.brand__description}>
+        <h1 className={styles.brand__name} data-aos="fade-up" data-delay="300">Brands who trust me</h1>
+        <p className={styles.brand__description} data-aos="fade-up" data-delay="400">
           I work with a diverse range of clients, spanning from globally
           renowned entities with milions of users to innovative startips.
         </p>

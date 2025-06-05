@@ -29,7 +29,33 @@
   border-top: 1px solid rgb(122, 122, 122);
   padding-top: 10px;
   width: 50%;
+  overflow: hidden;
 }
-
-
-
+.header__nav li {
+  position: relative;
+  /* width: 120px; */
+  display: block;
+  width: 80px;
+  height: 24px;
+  overflow: hidden;
+}
+.header__nav .a1 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 0.3s;
+}
+.header__nav .a2 {
+  position: absolute;
+  transition: 0.3s;
+  top: -100%;
+}
+.header__nav li:hover .a1 {
+  top: 100%;
+  transition: 0.3s;
+}
+.header__nav li:hover .a2 {
+  content: attr(data-title);
+  transition: 0.3s;
+  top: 0;
+}

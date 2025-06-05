@@ -1,14 +1,23 @@
 @import url("../../../styles/font.css");
 .projectItem {
+  position: relative;
+  display: block;
+  /* background-color: RGB(235, 235, 235); */
+  border-radius: 8px;
+  padding: 20px;
+  height: 650px;
+  width: 650px;
+  z-index: 2;
+  perspective: 650px;
+}
+.projectItemLink {
   display: block;
   background-color: RGB(235, 235, 235);
   border-radius: 8px;
   padding: 20px;
-  height: 620px;
-  width: 650px;
-  z-index: 2;
+  height: 100%;
+  width: 100%;
 }
-
 .projectItem__top {
   display: flex;
   white-space: nowrap;
@@ -21,6 +30,8 @@
   font-weight: 400;
   gap: 10px;
   text-transform: uppercase;
+  will-change: transform;
+  transform: translateZ(0);
 }
 
 .projectItem__line {
@@ -131,5 +142,73 @@
 .projectItem__link:hover {
   background-color: RGB(26, 23, 26);
   color: rgb(236, 236, 236);
-  transition: 0.5s;
+  /* transition: 0.5s; */
+}
+
+/* framer */
+.tiltedCardFigure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: RGB(235, 235, 235);
+}
+
+.tiltedCardMobileAlert {
+  position: absolute;
+  top: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .tiltedCardMobileAlert {
+    display: block;
+  }
+  .tiltedCardCaption {
+    display: none;
+  }
+}
+
+.tiltedCardInner {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.tiltedCardImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  border-radius: 15px;
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.tiltedCardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  will-change: transform;
+  transform: translateZ(30px);
+}
+
+.tiltedCardCaption {
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 4px 10px;
+  font-size: 10px;
+  color: #2d2d2d;
+  opacity: 0;
+  z-index: 3;
 }

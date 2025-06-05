@@ -1,32 +1,44 @@
 @import url("../../../styles/font.css");
 .project {
-  display: flex;
-  justify-content: space-between;
   position: relative;
   padding: 80px 80px;
+}
+.projectContent {
+  display: flex;
+  justify-content: space-between;
+   position: relative;
+  z-index: 2;
 }
 .projectBackground {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: linear-gradient(to bottom,rgba(74, 73, 74, 0.3), rgba(26, 24, 26, 1)),
-    url("/public/assets/images/background.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(74, 73, 74, 0.3),
+      rgba(26, 24, 26, 1)
+    ),
+    url("/assets/images/background.png");
   background-size: cover;
-  height: 370px;
+  height: 220px;
   z-index: 1;
   width: 100%;
   border-top-left-radius: 60px;
   border-top-right-radius: 60px;
 }
+/* .wrapTitle {
+  position: relative;
+  z-index: 2;
+} */
 .projectname {
   position: sticky;
-  top: 20px;
-  z-index: 2;
+  top: 120px;
   font-size: 96px;
   color: rgb(122, 122, 122);
   line-height: 108px;
   font-weight: 600;
   font-family: "Poppins_Bold", sans-serif;
+  margin-bottom: 60px;
 }
 
 .projectList {
@@ -34,5 +46,5 @@
   flex-direction: column;
   gap: 40px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }

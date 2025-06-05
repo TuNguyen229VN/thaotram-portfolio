@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 import StretchComponent from "../../components/stretch/StretchComponent";
 const Bio = () => {
   return (
-    <div className={styles.bio}>
+    <div className={styles.bio} data-aos="fade-up">
       <div className={styles.bio__top}>
         <h1 className={styles.bio__topname}>
           Content Marketing <span>&</span> PR Copywriting
