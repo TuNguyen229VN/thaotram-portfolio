@@ -6,7 +6,7 @@
 .projectContent {
   display: flex;
   justify-content: space-between;
-   position: relative;
+  position: relative;
   z-index: 2;
 }
 .projectBackground {
@@ -47,4 +47,58 @@
   gap: 40px;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .project {
+    padding: 60px 60px;
+  }
+  .projectContent {
+    flex-direction: column;
+  }
+  .projectname {
+    top: 100px;
+    font-size: 58px;
+    line-height: 98px;
+    margin-bottom: 30px;
+  }
+  .projectList {
+    gap: 30px;
+  }
+  .pdContent {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .projectBackground {
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+  .project {
+    padding: 40px 40px;
+  }
+  .projectname {
+    top: 100px;
+    font-size: 48px;
+    line-height: 88px;
+    margin-bottom: 20px;
+  }
+  .projectList {
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .project {
+    padding: 20px 20px;
+  }
+  .projectname {
+    top: 100px;
+    font-size: 38px;
+    line-height: 88px;
+    margin-bottom: 10px;
+  }
 }

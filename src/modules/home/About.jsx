@@ -18,16 +18,18 @@ const About = () => {
           >
             <p>About me</p>
             <div className={styles.content__small}>
-              I am a Content Createtor and Web Developer based on the Elementor
-              platform. My job is to create products with intuitive, attractive
-              interfaces and solve problems that users & businesses face.
+              An introvert who makes noise through ideas. I’m a creative
+              copywriter with a strategic mindset, blending imagination with
+              intention. While I write for brands, I always start with the
+              audience — their needs, their language, their world. Because great
+              copy isn’t just heard — it’s felt.
             </div>
           </div>
         </div>
         <div
           className={styles.content__image}
           data-aos="fade-up"
-          data-delay="400"
+          data-delay="300"
         >
           <img src="/assets/images/2.jpg" alt="content_image" />
         </div>

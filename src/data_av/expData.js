@@ -1,30 +1,40 @@
 export const expStudy = [
   {
-    nameSchool: "University of Technology",
-    major: "Computer Science",
-    dateStudy: "2015 - 2019",
+    nameSchool: "Hoa Sen University",
+    major: "Bachelor’s in Business Administration (GPA: 3.5 / 4.0)",
+    dateStudy: "2016 – 2020",
   },
 ];
 export const expData = [
   {
-    nameCompany: "Company A",
-    position: "Software Engineer",
-    dateWorked: "Jan 2020 - Present",
+    nameCompany: "WISDOM AGENCY",
+    position: "Senior Content Writer",
+    dateWorked: "Oct 2021 – Present",
   },
   {
-    nameCompany: "Company B",
-    position: "Data Analyst",
-    dateWorked: "Jun 2018 - Dec 2019",
+    nameCompany: "DNA CONSULTING",
+    position: "Junior Social Creative",
+    dateWorked: "April 2021 - August 2021",
   },
   {
-    nameCompany: "Company C",
-    position: "Intern",
-    dateWorked: "Jan 2018 - May 2018",
+    nameCompany: "VITAMIN HOUSE",
+    position: "Social Media Planner & Executive",
+    dateWorked: " January 2021 – August 2022",
   },
   {
-    nameCompany: "Company D",
-    position: "Project Manager",
-    dateWorked: "Mar 2016 - Dec 2017",
+    nameCompany: "MAXMAR AGENCY",
+    position: "Copywriter",
+    dateWorked: "March 2020 - December 2020",
+  },
+  {
+    nameCompany: "Freelance",
+    position: "Content Writer",
+    dateWorked: " Sept 2019 – Present",
+  },
+  {
+    nameCompany: "FINIZZ COMPANY",
+    position: "Marketing Intern",
+    dateWorked: "June 2018 - October 2018",
   },
 ];
 

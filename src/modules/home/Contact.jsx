@@ -21,12 +21,12 @@ const Contact = () => {
           </span>
           <div className={styles.contact__contetnWrapper}>
             <a
-              href="tel:0909901210"
+              href="tel:0763510552"
               className={styles.contact__link}
               data-aos="fade-up"
               data-delay="400"
             >
-              0909901210
+              0763510552
               <Phone className={styles.contact__icon} />
             </a>
           </div>
@@ -37,12 +37,12 @@ const Contact = () => {
           </span>
           <div className={styles.contact__contetnWrapper}>
             <a
-              href="mailto:abc@gmail.com"
+              href="mailto:tram.nguyenthanhthao@gmail.com"
               className={styles.contact__link}
               data-aos="fade-up"
               data-delay="400"
             >
-              abc@gmail.com
+              tram.nguyenthanhthao@gmail.com
               <Mail className={styles.contact__icon} />
             </a>
           </div>

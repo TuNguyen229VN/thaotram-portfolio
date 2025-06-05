@@ -112,3 +112,53 @@
   gap: 30px;
   width: 100%;
 }
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .projectDetail {
+    padding: 60px 0px;
+  }
+  .pdTitle {
+    font-size: 58px;
+    line-height: initial;
+    margin: 30px 0;
+  }
+  .pdBanner {
+    height: 500px;
+  }
+  .pdContent {
+    flex-direction: column;
+  }
+  .pdAnother {
+    font-size: 29px;
+    line-height: initial;
+    margin: 40px 0px;
+  }
+  .projectList {
+   grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pdType{
+    margin-top: 50px;
+  }
+  .pdTitle {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  .projectDetail {
+    padding: 40px 0px;
+  }
+  .pdBanner {
+    height: 400px;
+  }
+  .pdAnother {
+    font-size: 24px;
+    margin: 30px 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

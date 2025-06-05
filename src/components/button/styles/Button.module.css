@@ -88,3 +88,27 @@
   line-height: 20px;
   font-weight: 500;
 }
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .button__contact {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .button__contact {
+    font-size: 14px;
+    padding: 10px;
+    width: 140px;
+    margin-top: 20px;
+  }
+  .button__contact__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

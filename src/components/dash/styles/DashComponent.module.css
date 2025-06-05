@@ -4,3 +4,20 @@
   height: 1px;
   margin-top: 60px;
 }
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .dash {
+    margin-top: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dash {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

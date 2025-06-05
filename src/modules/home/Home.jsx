@@ -13,6 +13,7 @@ import gsap from "gsap";
 import Aos from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import { useLocation } from "react-router";
+import LoadingComponent from "../../components/loading/LoadingComponent";
 
 const Home = () => {
   const location = useLocation();
@@ -24,7 +25,6 @@ const Home = () => {
     if (location.hash && lenis) {
       setTimeout(() => {
         const el = document.querySelector(location.hash);
-        console.log(el.id);
         if (el) {
           lenis.scrollTo(el, {
             duration: 1,

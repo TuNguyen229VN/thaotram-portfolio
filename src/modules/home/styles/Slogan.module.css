@@ -18,3 +18,37 @@
 .slogan__title span {
   color: rgb(236, 236, 236);
 }
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .slogan {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 600px;
+  }
+  .slogan__title {
+    font-size: 58px;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .slogan {
+    padding-top: 20px;
+    padding-bottom: 20px;
+      height: 400px;
+  }
+  .slogan__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .slogan__title {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}

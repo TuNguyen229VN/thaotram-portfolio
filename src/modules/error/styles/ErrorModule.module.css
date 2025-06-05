@@ -1,0 +1,31 @@
+.errorModule {
+  padding: 100px 0px;
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 768px) {
+  .errorModule {
+    padding: 100px 0px;
+    width: 500px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .errorModule {
+    padding: 100px 0px;
+    width: 300px;
+    height: 300px;
+  }
+}

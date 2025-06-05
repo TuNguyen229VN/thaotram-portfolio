@@ -60,3 +60,63 @@
   line-height: 24px;
   font-weight: 400;
 }
+
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .cv__title {
+    font-size: 58px;
+  }
+  .cv__exp p {
+    font-size: 26px;
+    line-height: 44px;
+  }
+  .cv__companyName {
+    font-size: 29px;
+    line-height: 44px;
+  }
+  .cv {
+    padding: 60px 60px;
+  }
+
+  .cv__block {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .cv__exp {
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .cv__detailsWrap {
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (max-width: 768px) {
+   .cv__title {
+    font-size: 48px;
+      line-height: initial;
+  }
+  .cv__exp p {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .cv__companyName {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .cv {
+    padding: 40px 40px;
+    border-radius: 40px;
+  }
+  .cv__exp span {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .cv {
+    padding: 20px 20px;
+  }
+}

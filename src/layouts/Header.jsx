@@ -3,7 +3,9 @@ import styles from "./styles/Header.module.css"; // Assuming you have a CSS modu
 import { Link } from "react-router";
 import { HOME_ROUTE } from "../constants/routesApp";
 import { scrollToTop } from "../utils/ScrollToTop";
-const Header = () => {
+import SubMenu from "../components/subMenu/SubMenu";
+import Menu from "../components/icons/Menu";
+const Header = ({ setOpen = () => {} }) => {
   return (
     <div className={styles.header}>
       <Link
@@ -14,6 +16,13 @@ const Header = () => {
         data-delay="300"
       >
         Nguyen Thanh Thao Tram Portfolio
+      </Link>
+      <Link
+        to={HOME_ROUTE}
+        className={styles.header__logoSub}
+        onClick={() => scrollToTop()}
+      >
+        <img src="/t_logo.svg" alt="logo" />
       </Link>
       <ul className={styles.header__nav}>
         <li data-aos="fade-down-left" data-delay="400">
@@ -41,6 +50,9 @@ const Header = () => {
           </a>
         </li>
       </ul>
+      <div className={styles.subMenu__Action} onClick={() => setOpen(true)}>
+        <Menu className={styles.icons} />
+      </div>
     </div>
   );
 };

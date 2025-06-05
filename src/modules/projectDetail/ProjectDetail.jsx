@@ -9,9 +9,11 @@ import ImageProjectItem from "../../components/imageProjectItem/ImageProjectItem
 import ButtonBack from "../../components/button/ButtonBack";
 import DashComponent from "../../components/dash/DashComponent";
 import ProjectItem from "../../components/projectItem/ProjectItem";
-import ReactLenis from "lenis/react";
+import ReactLenis, { useLenis } from "lenis/react";
+import ErrorPage from "../../pages/ErrorPage";
 const ProjectDetail = () => {
   const { slug } = useParams();
+  const lenis = useLenis();
   const [projectList, setProjectList] = useState({});
 
   useEffect(() => {
@@ -19,13 +21,16 @@ const ProjectDetail = () => {
   }, []);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
     document.title = `${slug}`;
     const found = projectData.find((p) => p.title === slug);
     if (found) {
       setProjectList(found);
+      lenis?.scrollTo(0, 0);
     }
-  }, [slug]);
+  }, [slug, lenis]);
+  if (projectList == null || Object.keys(projectList).length === 0) {
+    return <ErrorPage></ErrorPage>;
+  }
   return (
     <ReactLenis root options={{ autoRaf: true }}>
       <ContainerFluid>

@@ -42,3 +42,30 @@
   width: 55px;
   height: 55px;
 }
+@media only screen and (min-width: 1201px) {
+}
+@media only screen and (max-width: 1200px) {
+}
+@media only screen and (max-width: 1024px) {
+  .skillItem__wrap {
+    flex-direction: column;
+  }
+  .skillItem__name {
+    font-size: 26px;
+  }
+  .skillItem__logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skillItem__name {
+    font-size: 20px;
+  }
+  .skillItem__logo {
+    width: 45px;
+    height: 45px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}
