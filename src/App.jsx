@@ -1,11 +1,10 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes, useLocation } from "react-router";
+import { BrowserRouter, Route, Routes} from "react-router";
 import {
   ERROR_ROUTE,
   HOME_ROUTE,
   PROJECT_DETAIL_ROUTE,
 } from "./constants/routesApp";
-import DelayedFallback from "./components/delayFallback/DelayedFallback";
 import LoadingComponent from "./components/loading/LoadingComponent";
 
 const HomePage = React.lazy(() => import("./pages/HomePage"));
@@ -20,10 +19,16 @@ function App() {
   );
 }
 function RoutesWithPageLoading() {
-  const location = useLocation();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const isMobile = window.innerWidth < 768;
+
+    if (isMobile) {
+      // Bỏ qua loading trên điện thoại
+      setLoading(false);
+      return;
+    }
     setLoading(true);
     const timer = setTimeout(() => setLoading(false), 3000);
     return () => clearTimeout(timer);
@@ -39,7 +44,7 @@ function RoutesWithPageLoading() {
     );
 
   return (
-    <Suspense fallback={<DelayedFallback delay={500} />}>
+    <Suspense>
       <Routes>
         <Route path={ERROR_ROUTE} element={<ErrorPage />} />
         <Route path={HOME_ROUTE} element={<HomePage />} />

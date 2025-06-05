@@ -4,6 +4,7 @@ import ButtonContact from "../../components/button/ButtonContact";
 import { bioData } from "../../data_av/bioData";
 import Marquee from "react-fast-marquee";
 import StretchComponent from "../../components/stretch/StretchComponent";
+import { HOME_ROUTE } from "../../constants/routesApp";
 const Bio = () => {
   return (
     <div className={styles.bio} data-aos="fade-up">
@@ -11,7 +12,7 @@ const Bio = () => {
         <h1 className={styles.bio__topname}>
           Content Marketing <span>&</span> PR Copywriting
         </h1>
-        <ButtonContact link="" text="Contact Me"/>
+        <ButtonContact link={`${HOME_ROUTE + "#contact"}`} text="Contact Me" />
       </div>
       <div className={styles.bio__bottom}>
         <div className={styles.bio__bottom__left}>

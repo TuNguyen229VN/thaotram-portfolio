@@ -3,7 +3,7 @@ import styles from "./styles/Button.module.css"; // Assuming you have a CSS modu
 import Arrow from "../icons/Arrow"
 const ButtonContact = ({text="Contact Me",link=""}) => {
   return (
-    <a href={link} className={styles.button__contact}>
+    <a href={link} className={styles.button__contact} data-aos="fade-up">
       <p>{text}</p>
       <div className={styles.button__contact__icon}>
         <Arrow />

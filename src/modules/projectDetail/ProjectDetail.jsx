@@ -11,6 +11,7 @@ import DashComponent from "../../components/dash/DashComponent";
 import ProjectItem from "../../components/projectItem/ProjectItem";
 import ReactLenis, { useLenis } from "lenis/react";
 import ErrorPage from "../../pages/ErrorPage";
+import Aos from "aos";
 const ProjectDetail = () => {
   const { slug } = useParams();
   const lenis = useLenis();
@@ -28,6 +29,14 @@ const ProjectDetail = () => {
       lenis?.scrollTo(0, 0);
     }
   }, [slug, lenis]);
+
+  // AOS initialization for animations
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   if (projectList == null || Object.keys(projectList).length === 0) {
     return <ErrorPage></ErrorPage>;
   }
@@ -35,7 +44,7 @@ const ProjectDetail = () => {
     <ReactLenis root options={{ autoRaf: true }}>
       <ContainerFluid>
         <div className={styles.projectDetail}>
-          <div className={styles.pdType}>
+          <div className={styles.pdType} data-aos="fade-up">
             {projectList?.description?.length > 0 &&
               projectList.description.map((item, index) => (
                 <span key={index} className={styles.pdTypeItem}>
@@ -43,14 +52,19 @@ const ProjectDetail = () => {
                 </span>
               ))}
           </div>
-          <div className={styles.pdTitle}>{projectList.title}</div>
-          <div className={styles.pdBlock}>
-            <ButtonContact link={projectList.link} text="Visit Web" />
+          <div className={styles.pdTitle} data-aos="fade-up">
+            {projectList.title}
           </div>
-          <div className={styles.pdBanner}>
+          <div className={styles.pdBlock}>
+            <ButtonContact
+              link={projectList.link}
+              text="Visit Web"
+            />
+          </div>
+          <div className={styles.pdBanner} data-aos="fade-up">
             <img src={projectList?.image?.[0]} alt={projectList.title} />
           </div>
-          <div className={styles.pdContent}>
+          <div className={styles.pdContent} data-aos="fade-up">
             <div className={styles.pdContentWrap}>
               <div className={styles.pdInfo}>
                 <p>Client Name</p>
@@ -65,7 +79,7 @@ const ProjectDetail = () => {
                 <span>branding</span>
               </div>
             </div>
-            <div className={styles.pdDesc}>
+            <div className={styles.pdDesc} data-aos="fade-up">
               <p>{projectList.content}</p>
             </div>
           </div>
