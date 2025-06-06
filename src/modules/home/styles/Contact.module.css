@@ -68,8 +68,16 @@
   margin-bottom: 10px;
   gap: 10px;
   transition: 0.3s;
+  white-space: nowrap; /* Không cho xuống dòng */
+  overflow: hidden; /* Ẩn phần chữ bị tràn */
+  text-overflow: ellipsis; /* Hiện dấu ... */
+  max-width: 100%;
 }
-
+.contact__link .spanSocial {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 .contact__contetnWrapper .contact__link:hover {
   color: rgb(236, 236, 236);
   transition: 0.3s;
@@ -110,6 +118,12 @@
   .contact__content:not(:nth-child(3)) {
     border-right: initial;
   }
+  .contact__link .contact__icon {
+    display: none;
+  }
+  .contact__contetnWrapper .contact__link:hover .contact__icon {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -129,7 +143,7 @@
     width: 20px;
     height: 20px;
   }
-  .contact__bg{
+  .contact__bg {
     display: none;
   }
 }

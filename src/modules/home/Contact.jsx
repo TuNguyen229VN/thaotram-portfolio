@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles/Contact.module.css"; // Assuming you have a CSS module for styles
 import Mail from "../../components/icons/Mail";
 import Phone from "../../components/icons/Phone";
 import ArrowUpRight from "../../components/icons/ArrowUpRight";
 const Contact = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    checkMobile(); // check ban đầu
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
   return (
     <div className={styles.contact} id="contact">
       <p className={styles.contact__title} data-aos="fade-up">
@@ -42,7 +54,9 @@ const Contact = () => {
               data-aos="fade-up"
               data-delay="400"
             >
-              tram.nguyenthanhthao@gmail.com
+              <div className={styles.spanSocial}>
+                tram.nguyenthanhthao@gmail.com
+              </div>
               <Mail className={styles.contact__icon} />
             </a>
           </div>
@@ -53,36 +67,32 @@ const Contact = () => {
             <a
               href=""
               className={styles.contact__link}
-              data-aos="fade-up"
-              data-delay="400"
+              {...(!isMobile
+                ? { "data-aos": "fade-up", "data-delay": "400" }
+                : {})}
             >
-              Facebook <ArrowUpRight className={styles.contact__icon} />
+              <div className={styles.spanSocial}>Facebook</div>
+              <ArrowUpRight className={styles.contact__icon} />
             </a>
             <a
               href=""
               className={styles.contact__link}
-              data-aos="fade-up"
-              data-delay="500"
+              {...(!isMobile
+                ? { "data-aos": "fade-up", "data-delay": "400" }
+                : {})}
             >
-              Behance{" "}
-              <ArrowUpRight
-                className={styles.contact__icon}
-                data-aos="fade-up"
-                data-delay="600"
-              />
+              <div className={styles.spanSocial}>Behance</div>{" "}
+              <ArrowUpRight className={styles.contact__icon} />
             </a>
             <a
               href=""
               className={styles.contact__link}
-              data-aos="fade-up"
-              data-delay="400"
+              {...(!isMobile
+                ? { "data-aos": "fade-up", "data-delay": "400" }
+                : {})}
             >
-              LinkedIn{" "}
-              <ArrowUpRight
-                className={styles.contact__icon}
-                data-aos="fade-up"
-                data-delay="400"
-              />
+              <div className={styles.spanSocial}>LinkedIn</div>{" "}
+              <ArrowUpRight className={styles.contact__icon} />
             </a>
           </div>
         </div>

@@ -27,8 +27,9 @@
 }
 .contentMenu .icons {
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 20%;
+  top: 20%;
+  transform: translateX(-30%);
 }
 .icons {
   align-items: center;
