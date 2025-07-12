@@ -14,7 +14,7 @@ const ProjectDetailPage = React.lazy(() => import("./pages/ProjectDetailPage"));
 function App() {
   return (
     <BrowserRouter>
-      <Suspense>
+      <Suspense fallback={<LoadingComponent />}>
         <Routes>
           <Route path={ERROR_ROUTE} element={<ErrorPage />} />
           <Route path={HOME_ROUTE} element={<HomePage />} />
@@ -27,42 +27,42 @@ function App() {
     </BrowserRouter>
   );
 }
-function RoutesWithPageLoading() {
-  const [loading, setLoading] = useState(true);
+// function RoutesWithPageLoading() {
+//   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const isMobile = window.innerWidth < 768;
+//   useEffect(() => {
+//     const isMobile = window.innerWidth < 768;
 
-    if (isMobile) {
-      // Bỏ qua loading trên điện thoại
-      setLoading(false);
-      return;
-    }
-    setLoading(true);
-    const timer = setTimeout(() => setLoading(false), 3000);
-    return () => clearTimeout(timer);
-  }, []);
+//     if (isMobile) {
+//       // Bỏ qua loading trên điện thoại
+//       setLoading(false);
+//       return;
+//     }
+//     setLoading(true);
+//     const timer = setTimeout(() => setLoading(false), 3000);
+//     return () => clearTimeout(timer);
+//   }, []);
 
-  // if (loading)
-  //   return (
-  //     <LoadingComponent
-  //       sentence="Tram Portfolio"
-  //       animationDuration={1}
-  //       borderColor="gray"
-  //     />
-  //   );
+// if (loading)
+//   return (
+//     <LoadingComponent
+//       sentence="Tram Portfolio"
+//       animationDuration={1}
+//       borderColor="gray"
+//     />
+//   );
 
-  return (
-    <Suspense>
-      <Routes>
-        <Route path={ERROR_ROUTE} element={<ErrorPage />} />
-        <Route path={HOME_ROUTE} element={<HomePage />} />
-        <Route
-          path={`${PROJECT_DETAIL_ROUTE}/:slug`}
-          element={<ProjectDetailPage />}
-        />
-      </Routes>
-    </Suspense>
-  );
-}
+//   return (
+//     <Suspense>
+//       <Routes>
+//         <Route path={ERROR_ROUTE} element={<ErrorPage />} />
+//         <Route path={HOME_ROUTE} element={<HomePage />} />
+//         <Route
+//           path={`${PROJECT_DETAIL_ROUTE}/:slug`}
+//           element={<ProjectDetailPage />}
+//         />
+//       </Routes>
+//     </Suspense>
+//   );
+// }
 export default App;
