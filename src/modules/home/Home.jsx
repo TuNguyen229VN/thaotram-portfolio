@@ -55,6 +55,15 @@ const Home = () => {
       duration: 800,
       once: false,
     });
+    const handleResize = () => {
+      Aos.refresh();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   return (
     <ReactLenis root options={{ autoRaf: true }}>

@@ -36,6 +36,15 @@ const ProjectDetail = () => {
       duration: 800,
       once: false,
     });
+     const handleResize = () => {
+      Aos.refresh();
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
   if (projectList == null || Object.keys(projectList).length === 0) {
     return <ErrorPage></ErrorPage>;

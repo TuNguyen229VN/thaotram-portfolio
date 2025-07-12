@@ -5,7 +5,9 @@ import Phone from "../../components/icons/Phone";
 import ArrowUpRight from "../../components/icons/ArrowUpRight";
 const Contact = () => {
   const [isMobile, setIsMobile] = useState(false);
-
+  // {...(!isMobile
+  //   ? { "data-aos": "fade-up", "data-aos-delay": "400" }
+  //   : {})}
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -28,31 +30,22 @@ const Contact = () => {
       />
       <div className={styles.contact__wrapper}>
         <div className={styles.contact__content}>
-          <span data-aos="fade-up" data-delay="400">
-            Phone
-          </span>
+          <span>Phone</span>
           <div className={styles.contact__contetnWrapper}>
-            <a
-              href="tel:0763510552"
-              className={styles.contact__link}
-              data-aos="fade-up"
-              data-delay="400"
-            >
+            <a href="tel:0763510552" className={styles.contact__link}>
               0763510552
               <Phone className={styles.contact__icon} />
             </a>
           </div>
         </div>
         <div className={styles.contact__content}>
-          <span data-aos="fade-up" data-delay="400">
+          <span data-aos="fade-up" data-aos-delay="400">
             Email
           </span>
           <div className={styles.contact__contetnWrapper}>
             <a
               href="mailto:tram.nguyenthanhthao@gmail.com"
               className={styles.contact__link}
-              data-aos="fade-up"
-              data-delay="400"
             >
               <div className={styles.spanSocial}>
                 tram.nguyenthanhthao@gmail.com
@@ -64,33 +57,15 @@ const Contact = () => {
         <div className={styles.contact__content}>
           <span>Social</span>
           <div className={styles.contact__contetnWrapper}>
-            <a
-              href=""
-              className={styles.contact__link}
-              {...(!isMobile
-                ? { "data-aos": "fade-up", "data-delay": "400" }
-                : {})}
-            >
+            <a href="" className={styles.contact__link}>
               <div className={styles.spanSocial}>Facebook</div>
               <ArrowUpRight className={styles.contact__icon} />
             </a>
-            <a
-              href=""
-              className={styles.contact__link}
-              {...(!isMobile
-                ? { "data-aos": "fade-up", "data-delay": "400" }
-                : {})}
-            >
+            <a href="" className={styles.contact__link}>
               <div className={styles.spanSocial}>Behance</div>{" "}
               <ArrowUpRight className={styles.contact__icon} />
             </a>
-            <a
-              href=""
-              className={styles.contact__link}
-              {...(!isMobile
-                ? { "data-aos": "fade-up", "data-delay": "400" }
-                : {})}
-            >
+            <a href="" className={styles.contact__link}>
               <div className={styles.spanSocial}>LinkedIn</div>{" "}
               <ArrowUpRight className={styles.contact__icon} />
             </a>
