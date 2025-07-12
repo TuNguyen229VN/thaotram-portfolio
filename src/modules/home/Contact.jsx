@@ -28,7 +28,7 @@ const Contact = () => {
       />
       <div className={styles.contact__wrapper}>
         <div className={styles.contact__content}>
-          <span data-aos="fade-up" data-delay="300">
+          <span data-aos="fade-up" data-delay="400">
             Phone
           </span>
           <div className={styles.contact__contetnWrapper}>

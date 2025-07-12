@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { BrowserRouter, Route, Routes} from "react-router";
+import { BrowserRouter, Route, Routes } from "react-router";
 import {
   ERROR_ROUTE,
   HOME_ROUTE,
@@ -14,7 +14,16 @@ const ProjectDetailPage = React.lazy(() => import("./pages/ProjectDetailPage"));
 function App() {
   return (
     <BrowserRouter>
-      <RoutesWithPageLoading />
+      <Suspense>
+        <Routes>
+          <Route path={ERROR_ROUTE} element={<ErrorPage />} />
+          <Route path={HOME_ROUTE} element={<HomePage />} />
+          <Route
+            path={`${PROJECT_DETAIL_ROUTE}/:slug`}
+            element={<ProjectDetailPage />}
+          />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   );
 }
@@ -34,14 +43,14 @@ function RoutesWithPageLoading() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading)
-    return (
-      <LoadingComponent
-        sentence="Tram Portfolio"
-        animationDuration={1}
-        borderColor="gray"
-      />
-    );
+  // if (loading)
+  //   return (
+  //     <LoadingComponent
+  //       sentence="Tram Portfolio"
+  //       animationDuration={1}
+  //       borderColor="gray"
+  //     />
+  //   );
 
   return (
     <Suspense>
