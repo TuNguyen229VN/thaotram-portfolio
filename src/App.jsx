@@ -14,7 +14,15 @@ const ProjectDetailPage = React.lazy(() => import("./pages/ProjectDetailPage"));
 function App() {
   return (
     <BrowserRouter>
-      <Suspense fallback={<LoadingComponent />}>
+      <Suspense
+        fallback={
+          <LoadingComponent
+            sentence="Tram Portfolio"
+            animationDuration={1}
+            borderColor="gray"
+          />
+        }
+      >
         <Routes>
           <Route path={ERROR_ROUTE} element={<ErrorPage />} />
           <Route path={HOME_ROUTE} element={<HomePage />} />
